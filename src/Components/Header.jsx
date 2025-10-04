@@ -15,23 +15,23 @@ function Header() {
                     <div className='w-full h-16 flex items-center justify-center'>
                         <img className='w-[120px] h-auto object-cover' src={logo} alt="#" />
                     </div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ChartColumnStacked size={20} />Subcategory</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ChartBarStacked size={20} />Category</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ShoppingCart size={20} />Products</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ShoppingBag size={20} />Orders</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><UsersRound size={20} />Customers</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><FileText size={20} />Reports</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ChartNoAxesCombined size={20} />Analytics</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><Settings size={20} />Settings</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><MessageCircleQuestionMark size={20} />Support</div>
-                    <div className='w-full h-[35px] hover:bg-zinc-700 cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><SunMedium size={20} />Theme</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ChartColumnStacked size={20} />Subcategory</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ChartBarStacked size={20} />Category</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ShoppingCart size={20} />Products</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ShoppingBag size={20} />Orders</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><UsersRound size={20} />Customers</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><FileText size={20} />Reports</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><ChartNoAxesCombined size={20} />Analytics</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><Settings size={20} />Settings</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><MessageCircleQuestionMark size={20} />Support</div>
+                    <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-10 gap-3 text-white font-mono'><SunMedium size={20} />Theme</div>
                 </div>
 
                 {/* Navbar */}
                 <div className="w-[85%]  h-16 bg-linear-to-t from-sky-400 to-indigo-500 flex flex-row items-center justify-between">
 
                     <div className='flex items-center gap-6 ml-2 md:ml-20'>
-                        <h1 className='font-bold text-white text-3xl hidden md:block'>Admin</h1>
+                        <h1 className='font-bold text-white text-3xl hidden md:block'>Nitesh</h1>
                         <div class="w-[42px] h-[42px] bg-center bg-cover rounded-[50%] cursor-pointer transition-all duration-200 ease-out hover:scale-110 md:hidden">
 
                             <img className='rounded-[50%]' src={image} alt="" />
@@ -45,7 +45,7 @@ function Header() {
                                 <input
                                     type="text"
                                     placeholder="Search..."
-                                    className="border border-slate-800 rounded-sm py-0.5 pl-8 pr-3 w-full outline-none"
+                                    className="border border-slate-800 rounded-3xl py-1 bg-white/20  pl-8 pr-3 w-full outline-none" 
                                 />
                             </div>
                         </div>
