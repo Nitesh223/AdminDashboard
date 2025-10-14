@@ -1,13 +1,29 @@
-import Main from "../src/Screens/Main.jsx"
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header.jsx"
+import SideBar from "./Components/SideBar.jsx"
+import Category from "./Screens/Category.jsx"
+import SubCategory from "./Screens/SubCategory.jsx"
+import Product from "./Screens/Product.jsx"
+import Dashboard from "./Screens/Dashboard.jsx";
 
 function App() {
 
   return (
-    <div> 
-    <Header/>
-    </div>
+    <>
+      <Router>
+        <Header />
+        <div className="flex absolute w-[100%] md:w-[85%] h-[calc(100%-64px)] bg-neutral-100 left-[15%] top-[64px]">
+          <Routes>
+            <Route path="/dashboard" element={<Dashboard/>}></Route>
+            <Route path="/category" element={<Category />} />
+            <Route path="/subcategory" element={<SubCategory />} />
+            <Route path="/product" element={<Product />} />
+          </Routes>
+        </div>
+        <SideBar />
+      </Router>
+
+    </>
   )
 }
 
