@@ -25,15 +25,15 @@ export default function Product() {
                 </h1>
                 <div className="bg-transparent shadow-xl  h-[80%] w-[80%] flex flex-row rounded-lg gap-4 items-center justify-center">
                     <div className="flex flex-col justify-center h-[80%] w-[50%] ">
-                        <TextField id="outlined-basic" label="Enter Category" variant="outlined" className='w-[70%]' />
-                        <TextField id="outlined-basic" label="Enter SubCategory" variant="outlined" className='w-[70%]' />
-                        <TextField id="outlined-basic" label="Enter Price" variant="outlined" className='w-[70%]' />
-                        <TextField id="outlined-basic" label="Enter Offer Price" variant="outlined" className='w-[70%]' />
+                        <TextField id="outlined-basic" label="Enter Category" variant="outlined" className='w-[70%]'/>
+                        <TextField id="outlined-basic" label="Enter Product ID" variant="outlined" className='w-[70%]'/>
+                        <TextField id="outlined-basic" label="Enter Price" variant="outlined" className='w-[70%]'/>
+                        <TextField id="outlined-basic" label="Enter Offer Price" variant="outlined" className='w-[70%]'/>
                     </div>
                     <div className="flex flex-col justify-center  h-[80%] w-[50%]">
-                        <TextField id="outlined-basic" label="Enter Product Description" variant="outlined" className='w-[70%]' />
-                        <TextField id="outlined-basic" label="Enter Product ID" variant="outlined" className='w-[70%]' />
-                        <TextField id="outlined-basic" label="Enter Price" variant="outlined" className='w-[70%]' />
+                        <TextField id="outlined-basic" label="Enter SubCategory" variant="outlined" className='w-[70%]'/>
+                        <TextField id="outlined-basic" label="Enter Product Description" variant="outlined" className='w-[70%]'/>
+                        <TextField id="outlined-basic" label="Enter Offer Price" variant="outlined" className='w-[70%]' />
                         <TextField id="outlined-basic" label="Enter Offer Price" variant="outlined" className='w-[70%]' />
                     </div>
                      <Button
