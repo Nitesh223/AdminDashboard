@@ -16,15 +16,14 @@ export default function SideBar() {
                 <div onClick={()=> navigate("/category")} className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><ChartBarStacked size={20} />Category</div>
                 <div onClick={()=> navigate("/subcategory")} className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><ChartColumnStacked size={20} />Subcategory</div>
                 <div onClick={()=> navigate("/product")} className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><ShoppingCart size={20} />Products</div>
-                <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><ShoppingBag size={20} />Orders</div>
-                <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><UsersRound size={20} />Customers</div>
-                <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><FileText size={20} />Reports</div>
+                <div onClick={()=> navigate("/orders")} className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><ShoppingBag size={20} />Orders</div>
+                <div onClick={()=> navigate("/customers")} className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><UsersRound size={20} />Customers</div>
+                <div onClick={()=> navigate("/report")} className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><FileText size={20} />Reports</div>
                 <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><ChartNoAxesCombined size={20} />Analytics</div>
                 <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><Settings size={20} />Settings</div>
                 <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><MessageCircleQuestionMark size={20} />Support</div>
                 <div className='w-full h-[35px] hover:bg-zinc-700  cursor-pointer flex items-center pl-2 md:pl-10 gap-3 text-white font-sans'><SunMedium size={20} />Theme</div>
             </div>
-
 
         </>
     )
