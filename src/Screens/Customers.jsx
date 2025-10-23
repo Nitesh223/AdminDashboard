@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Chance from 'chance';
 
-const chance = new Chance(42); 
+const chance = new Chance(42);
 
 function createData(id) {
   return {
@@ -31,27 +31,39 @@ const columns = [
 
 const rows = Array.from({ length: 50 }, (_, index) => createData(index)); // 50 sample rows
 
-export default function SimpleMuiTable() {
+export default function Customers() {
   return (
-    <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
-      <Table stickyHeader>
-        <TableHead>
-          <TableRow>
-            {columns.map((col) => (
-              <TableCell key={col.dataKey}>{col.label}</TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.id}>
-              {columns.map((col) => (
-                <TableCell key={col.dataKey}>{row[col.dataKey]}</TableCell>
+    <div className=' w-full h-full flex items-center justify-center shadow-4xl'>
+      
+      <div className=''>
+        <h1 className='py-4 mt-0 font-bold text-3xl text-center'>Customers</h1>
+        <TableContainer component={Paper} sx={{  maxHeight: 550,        
+            width: '100%' , boxShadow:5, borderRadius: 2 , '&::-webkit-scrollbar': { display: 'none' },
+            scrollbarWidth: 'none',
+            '-ms-overflow-style': 'none', }}>
+          <Table stickyHeader sx={{ minWidth: 1000 }} aria-label="customers table">
+            <TableHead>
+              <TableRow>
+                {columns.map((col) => (
+                  <TableCell key={col.dataKey} sx={{ fontWeight: 700, fontSize:20, fontFamily:'-moz-initial'}}>{col.label}
+                  </TableCell>
+                ))}
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow key={row.id} >
+                  {columns.map((col) => (
+                    <TableCell key={col.dataKey} >{row[col.dataKey]} </TableCell>
+                  ))}
+                </TableRow>
               ))}
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
+
+    </div>
+
   );
 }

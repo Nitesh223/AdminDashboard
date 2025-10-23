@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 
 
 
+
 export default function Category() {
     return (
         <>
@@ -27,7 +28,7 @@ export default function Category() {
                     tabIndex={-1}
                         startIcon={<CloudUploadIcon />}
                     >
-                        Upload files
+                        Upload Image
                         <input type="file" hidden />
                     </Button>
 
@@ -35,8 +36,7 @@ export default function Category() {
                 </div>
             </div>
 
-       
-
+      
         </>
     )
 }
