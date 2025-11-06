@@ -8,10 +8,10 @@ function Header() {
     return (
         <>
 
-            <div className="w-[100%] md:w-[85%]  h-16 bg-linear-to-t from-sky-400 to-indigo-500 flex flex-row items-center justify-between fixed top-0 right-0">
+            <div className="w-[100%] md:w-[85%]  h-16 shadow-xl bg-sky-400 flex flex-row items-center justify-between fixed top-0 right-0">
 
                 <div className='flex items-center gap-6 ml-2 md:ml-20'>
-                    <h1 className='font-bold text-white text-3xl hidden md:block'>Nitesh</h1>
+                    <h1 className='font-bold text-black text-3xl hidden md:block'>Nitesh</h1>
                     <div class="w-[42px] h-[42px] bg-center bg-cover rounded-[50%] cursor-pointer transition-all duration-200 ease-out hover:scale-110 md:hidden">
 
                         <img className='rounded-[50%]' src={image} alt="" />

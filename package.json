@@ -16,6 +16,7 @@
     "@mui/material": "^7.3.4",
     "@mui/x-charts": "^8.14.0",
     "@mui/x-data-grid": "^8.14.1",
+    "axios": "^1.13.2",
     "chance": "^1.1.13",
     "lucide-react": "^0.544.0",
     "react": "^19.1.1",

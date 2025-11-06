@@ -1,13 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header.jsx"
 import SideBar from "./Components/SideBar.jsx"
-import Category from "./Screens/Category.jsx"
-import SubCategory from "./Screens/SubCategory.jsx"
-import Product from "./Screens/Product.jsx"
-import Dashboard from "./Screens/Dashboard.jsx";
-import Orders from "./Screens/Orders.jsx";
-import Customers from "./Screens/Customers.jsx";
-import Report from "./Screens/Report.jsx";
+import Category from "./Pages/Category.jsx"
+import SubCategory from "./Pages/SubCategory.jsx"
+import Product from "./Pages/Product.jsx"
+import Dashboard from "./Pages/Dashboard.jsx";
+import Orders from "./Pages/Orders.jsx";
+import Customers from "./Pages/Customers.jsx";
+import Report from "./Pages/Report.jsx";
+import CategoryTable from "./Pages/CategoryTable.jsx";
+import ProductTable from "./Pages/ProductTable.jsx";
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
             <Route path="/orders" element={<Orders/>} />
             <Route path="/customers" element={<Customers/>} />
             <Route path="/report" element={<Report/>} />
+            <Route path="/categorytable" element={<CategoryTable/>} />
+            <Route path="/producttable" element= {<ProductTable/>} />
           </Routes>
         </div>
         <SideBar />
